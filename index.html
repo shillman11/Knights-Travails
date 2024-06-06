@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="main2.js" defer></script>
+    <title>Knight Travails</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-button-container">
+        <button
+          class="end-button"
+          onclick="GameController.placeEndClickHandler()"
+        >
+          Place end square
+        </button>
+        <button
+          class="start-button"
+          onclick="GameController.startClickHandler()"
+        >
+          Start
+        </button>
+      </div>
+    </div>
+    <div class="board-container"></div>
+  </body>
+</html>

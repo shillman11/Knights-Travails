@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-button-container {
+  margin-top: 5vh;
+  display: flex;
+  gap: 10vw;
+}
+
+.board-container {
+  /* border: 1px solid red; */
+  height: fit-content;
+  width: fit-content;
+  margin-top: 100px;
+  box-shadow: 1px 1px 11px 5px rgba(0, 0, 0, 0.45);
+}
+
+.board-row {
+  height: 50px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.board-square {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 40px;
+  color: rgba(3, 252, 7);
+}
+
+.board-square-end {
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgba(252, 3, 3, 0.5);
+  background-color: rgba(252, 3, 3, 0.5) !important;
+  text-align: center;
+  font-size: 40px;
+  color: rgba(3, 252, 7);
+}
+
+.board-square-start {
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgba(3, 252, 7, 0.5);
+  background-color: rgba(3, 252, 7, 0.5) !important;
+  text-align: center;
+  font-size: 40px;
+  color: rgba(3, 252, 7);
+}
+
+.end-button,
+.start-button {
+  background-color: grey;
+  border: 1px solid black;
+  height: 30px;
+  width: 150px;
+  color: rgba(255, 255, 255, 0.959);
+  transition: color 0.25s linear, background-color 0.25s linear;
+}
+
+.end-button:hover,
+.start-button:hover {
+  background-color: rgba(255, 255, 255, 0.959);
+  border: 1px solid black;
+  height: 30px;
+  width: 150px;
+  color: grey;
+}
